@@ -55,26 +55,26 @@ Application (with the embedded H2 database) is ready to be used ! You can access
 - **Response**: `200 OK`
 
 
-###What I did
+##What I did
 
-*Add Search Employees
-- **URL**: `/api/v1/employees/search`
-- **Method**: `GET`
-- **Description**: Searches for employees by name, salary, and department.
-- **Response**: `200 OK`
+-Add Search Employees
+ - **URL**: `/api/v1/employees/search`
+ - **Method**: `GET`
+ - **Description**: Searches for employees by name, salary, and department.
+ - **Response**: `200 OK`
 
-*Add Exception Handling
+-Add Exception Handling
 
 　　The application includes a global exception handler that manages the following scenarios:
 
 - **EmployeeNotFoundException**: Thrown when an employee is not found. Returns a `404 Not Found` response.
 - **Generic Exceptions**: Catches other exceptions and returns a `500 Internal Server Error` response.
 
-*Add comprehensive comments to code for readability and maintainability.
+-Add comprehensive comments to code for readability and maintainability.
 
-*Implemented comprehensive test cases for the EmployeeController class, ensuring robustness and reliability, as demonstrated in the EmployeeControllerTest class
+-Implemented comprehensive test cases for the EmployeeController class, ensuring robustness and reliability, as demonstrated in the EmployeeControllerTest class
 
-*Caching Database Calls
+-Caching Database Calls
   To improve performance, caching has been implemented for database calls using Spring's caching abstraction. The `EmployeeService` class utilizes caching annotations (`@Cacheable`, `@CachePut`, `@CacheEvict`) to cache method.
 
 #### My experience in Java
